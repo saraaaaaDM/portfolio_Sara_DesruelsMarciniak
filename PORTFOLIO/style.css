@@ -1,0 +1,503 @@
+*{
+  margin: 4px;
+  padding: 1px;
+  /*box-sizing: border-box;*/
+  scroll-behavior: smooth;
+}
+
+body{
+  cursor: url('./image/curseur.svg'), auto;
+  line-height: 1;
+  background-color: beige;
+  color: #5e3b25;
+  overflow-y: scroll;
+}
+
+#logo {
+  width: 150px;
+}
+
+header {
+  position: fixed;
+  font-size: 30px;
+  width: 99%;
+  background-color: maroon;
+  z-index: 1000;
+  padding: 0;
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center; 
+  height: 8rem; 
+}
+
+.logo-container {
+  padding-left: 10px; 
+}
+
+.logo-container:hover {
+  cursor: url('./image/curseur.svg'), auto;
+}
+ 
+#contact {
+  display: flex;
+  justify-content: center; /* Centré horizontalement */
+  align-items: center; /* Centré verticalement */
+  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: beige;
+  font-size: 20px; 
+}
+
+nav ul li a:hover {
+  color: #9c7157;
+  cursor: url("./image/curseurfleche.svg"),auto;
+}
+
+ul{
+  list-style: none;
+}
+
+#home{
+  font-family: serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #a3886b 30%, #b8a089 60%, #d6c4b1 80%, #f4ede3 100%);
+  position: relative;
+  margin-right: 0;
+}
+
+.intro {
+  text-align: center;
+  color: beige;
+  position: relative;
+  z-index: 2; 
+}
+
+.intro h1{
+  font-family: Brush Script MT;
+  font-size: 200px;
+  animation: fadeIn 3s;
+}
+
+.intro p{
+  font-family:  Brush Script MT; 
+  font-size: 50px;
+}
+
+#home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#about{
+  background-color: #e9e8cc;
+}
+
+.about-img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  animation: fadeIn 2s;
+  align-items: left;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(3,1);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.about-text {
+  text-align: left;
+  font-size: 16px;
+  color:maroon;
+  line-height: 1.6;
+  max-width: 600px;
+
+}
+
+.about-text h3{
+  font-size: 26px;
+  color: #5e3b25;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.about-text ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-text li{
+  margin-bottom: 10px;
+}
+
+.about-text a {
+  cursor: url('./image/curseurfleche.svg'),auto;
+}
+
+blockquote{
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 8px solid maroon;
+  background-color: #F5F5DC;
+}
+
+@media (max-width: 952px) {
+  .intro h1{
+    font-family: Brush Script MT;
+    font-size: 150px;
+    animation: fadeIn 3s;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 14px;
+    font-weight: bold; 
+  }
+  
+  .carousel-container {
+        padding: 0; 
+        margin: 0 auto;
+        width: 100%; 
+        overflow: hidden; 
+        justify-content: center;
+    }
+
+    
+  .gallery-item img {
+        max-width: 400px; 
+        height: auto; 
+        object-fit: contain; 
+        display: block;
+        align-items: center;
+    }
+
+    
+  .carousel-btn {
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        width: 40px; 
+        height: 50px;
+        border-radius: 50%;
+        background-color: maroon; 
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+    }
+
+  .carousel-btn.prev {
+        left: 7px; 
+    }
+
+  .carousel-btn.next {
+        right: 7px; 
+    }
+}
+
+
+/*TIMELINE*/
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  flex-direction: row;
+}
+
+
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-date {
+  background-color: maroon;
+  color: beige;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 50%;
+  left: -50px;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: 10px;
+  margin-right: 20px;
+}
+
+
+.timeline-content {
+  background-color: #e9e8cc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  text-align: left;
+  z-index: 2;
+  padding-bottom: 0%;
+}
+
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 550px;
+  background-color: maroon;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%); 
+  /*visibility: hidden;*/
+}
+
+
+.timeline-content h4 {
+  margin-top: 0;
+  font-size: 22px;
+  color: maroon;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  color: #5e3b25;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .timeline-item {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .timeline-date {
+    position: relative;
+    top: 0;
+    left: 10px;
+    margin-right: 20px;
+  }
+
+  .timeline-content {
+    width: 60%;
+  }
+}
+
+.icons2{
+  width: 30px;
+  align-items: center;
+}
+.icons{
+  width: 6rem;
+}
+
+
+#creations{
+  background-color: #e9e8cc;
+}
+
+section h2{
+  font-size: 40px;
+  font-family: Brush Script MT;
+  margin-bottom: 60px;
+  text-decoration: underline;
+}
+
+section p{
+  font-size: 25px;
+  color: maroon;
+  max-width: 750px;  
+  font-family: serif;
+}
+
+.gallery-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 90%;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  min-width: 300px;
+  margin-right: 350px;
+}
+
+.carousel-btn {
+  background-color: maroon;
+  color: beige;
+  border-radius: 20%;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+.carousel-btn:hover {
+  background-color: #9c7157;
+}
+.carousel-btn.next {
+  align-items: center;
+  width: 42px;
+  position: absolute;
+  top: 50%; /* Centré verticalement */
+  right: 10px; /* Distance du bord droit */
+  transform: translateY(-50%); /* Ajuste le centrage vertical */
+  background-color: #800000; /* Couleur de fond (ajustable) */
+  color: beige; /* Couleur du texte */
+  border: none; /* Supprime les bordures */
+  padding: 10px 15px; /* Ajoute du padding pour une meilleure visibilité */
+  cursor: pointer; /* Indique que c'est cliquable */
+  z-index: 10; /* Assure que le bouton est au-dessus du carousel */
+}
+
+.carousel-btn.next:hover {
+  background-color: #a00000; /* Couleur différente au survol */
+}
+
+
+.gallery-item img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  filter: blur(8px)
+}
+
+.gallery-item a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: maroon;
+  font-size: 18px;
+}
+
+.gallery-item a:hover{
+  color:#5e3b25;
+  font-weight: bold;
+}
+
+.gallery-item img:hover{
+  filter: blur(0);
+  cursor: url('./image/curseurfleche.svg'),auto;
+}
+
+.gallery-item video{
+  width: 600px;
+  height: 500px;
+  filter: blur(8px);
+}
+.gallery-item video:hover{
+  filter: blur(0);
+  cursor: url('./image/curseurfleche.svg'),auto;
+}
+
+footer{
+  text-align: right;
+  padding: 15px;
+  background-color: maroon;
+  color: beige;
+  position: static;
+}
+
+.footer-contact a {
+  color: beige;
+  text-decoration: underline;
+}
+
+.footer-contact a:hover{
+  color: #5e3b25;
+  cursor: url("./image/curseurfleche.svg"),auto;
+}
+
+.social-icons a i.fab.fa-linkedin{
+  color: #ffffff;
+  margin: 0 0.5rem;
+  font-size: 3rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover i.fab.fa-linkedin{
+  color: #0A66C2;
+  cursor: url("./image/curseurfleche.svg"), auto;
+}
+
+.social-icons a i{
+  font-size: 3rem;
+}
+
+.social-icons a i.fab.fa-instagram{
+  color: beige;
+}
+
+.social-icons a:hover i.fab.fa-instagram{
+  color: #DD2A7B;
+  cursor: url(".//image/curseurfleche.svg"),auto;
+}

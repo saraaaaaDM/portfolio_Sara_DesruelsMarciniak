@@ -1,0 +1,204 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 952px) {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .photo-grid img {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: beige;
+    color: #5e3b25;
+    line-height: 1.6;
+    cursor: url('./image/curseur.svg'), auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: maroon;
+    color: beige;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #d4a77a;
+    cursor: url("./image/curseurfleche.svg"), auto;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.project-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: maroon;
+}
+
+.project-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #5e3b25;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Conteneur pour chaque image */
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo-container:hover img {
+    transform: scale(1.1); /* Effet de zoom sur l'image */
+}
+
+/* Overlay (le panneau qui glisse) */
+.photo-container .overlay {
+    position: absolute;
+    top: -100%; /* Positionné en dehors de la vue initialement */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur semi-transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition: top 0.3s ease; /* Transition pour l'effet de glissement */
+}
+
+/* Au survol, le panneau glisse vers le haut */
+.photo-container:hover .overlay {
+    top: 0; /* Glisse pour couvrir l'image */
+}
+
+/* Button */
+.next-project {
+    background-color: maroon;
+    color: beige;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: url("./image/curseurfleche.svg"), auto;
+}
+
+.next-project:hover {
+    background-color: #9c7157;
+}
+
+/* Footer */
+footer{
+    text-align: right;
+    padding: 15px;
+    background-color: maroon;
+    color: beige;
+    position: static;
+  }
+  
+  .footer-contact a {
+    color: beige;
+    text-decoration: underline;
+  }
+  
+  .footer-contact a:hover{
+    color: #5e3b25;
+    cursor: url("./image/curseurfleche.svg"),auto;
+  }
+  
+  .social-icons a i.fab.fa-linkedin{
+    color: #ffffff;
+    margin: 0 0.5rem;
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover i.fab.fa-linkedin{
+    color: #0A66C2;
+    cursor: url("./image/curseurfleche.svg"), auto;
+  }
+  
+  .social-icons a i{
+    font-size: 3rem;
+  }
+  
+  .social-icons a i.fab.fa-instagram{
+    color: beige;
+  }
+  
+  .social-icons a:hover i.fab.fa-instagram{
+    color: #DD2A7B;
+    cursor: url(".//image/curseurfleche.svg"),auto;
+  }
