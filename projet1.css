@@ -4,36 +4,41 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    /* Pour les images de la grille */
+/* Pour les petits écrans (max-width: 768px) */
+@media (max-width: 1200px) {
+    /* Adapter les images dans la grille pour qu'elles ne débordent pas */
     .photo-grid img {
-        width: 100%; /* Assurez-vous que l'image s'adapte à la largeur de son conteneur */
-        max-width: 100%; /* Garantit que l'image ne déborde pas du cadre */
-        height: auto; /* Assure que l'aspect ratio est respecté */
-        object-fit: cover; /* Cela permet à l'image de se remplir sans déformer */
-        cursor: pointer; /* Change le curseur pour indiquer qu'on peut cliquer */
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;  /* Modifie pour que l'image soit entièrement visible sans être coupée */
+        cursor: pointer;
     }
 
     /* Masquer la description par défaut */
     .photo-grid .description {
-        display: none; /* Masquer la description par défaut */
+        display: none;  /* La description est cachée par défaut */
         font-size: 1rem;
         text-align: center;
         margin-top: 10px;
     }
 
-    /* Afficher la description quand l'image est cliquée */
+    /* Ajouter un effet de "toggle" pour afficher la description sur mobile */
     .photo-grid img.clicked + .description {
-        display: block; /* Afficher la description lorsque l'image est cliquée */
+        display: block;  /* Affiche la description lorsque l'image est cliquée */
     }
 
     /* Taille du texte pour la description */
     .photo-grid p {
-        font-size: 1rem; /* Réduire la taille du texte pour les petits écrans */
-        max-width: 100%; /* Assurez-vous que le texte ne dépasse pas */
+        font-size: 1rem;
+        max-width: 100%;
         margin-top: 10px;
     }
 }
+
+/* Pour afficher la description sur mobile au clic, on doit ajouter un peu de JavaScript pour gérer l'état cliqué */
+
+
 
 
 /* Body Style */
