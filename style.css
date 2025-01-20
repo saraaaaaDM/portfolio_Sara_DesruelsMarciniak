@@ -63,7 +63,7 @@ nav ul li a {
   color: beige;
   font-size: 20px;
   padding: 10px 20px; /* Ajouter du padding pour créer de l'espace autour du texte */
-  border: 2px solid transparent; /* Bordure transparente par défaut */
+  border: 2px solid beige; /* Bordure transparente par défaut */
   border-radius: 15px; /* Bords arrondis */
   transition: all 0.3s ease; /* Transition pour une animation fluide */
 }
@@ -193,14 +193,10 @@ blockquote{
 @media (max-width: 1200px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 30px !important;
+    font-size: 25px !important;
     text-decoration: none;
     color: beige;
     font-size: 20px;
-    padding: 10px 20px; /* Ajouter du padding pour créer de l'espace autour du texte */
-    border: 2px solid beige; /* Bordure transparente par défaut */
-    border-radius: 15px; /* Bords arrondis */
-    transition: all 0.3s ease;
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
