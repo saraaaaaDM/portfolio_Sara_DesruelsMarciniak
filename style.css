@@ -188,7 +188,7 @@ blockquote{
 @media (max-width: 768px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 28px; /* Augmenter la taille des liens */
+    font-size: 35px; /* Augmenter la taille des liens */
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
@@ -202,16 +202,16 @@ blockquote{
 
   /* Texte sous la photo dans la section "about" */
   .about-text {
-    font-size: 22px; /* Augmenter la taille du texte sous la photo */
+    font-size: 30px; /* Augmenter la taille du texte sous la photo */
   }
 
   .about-text h3 {
-    font-size: 35px; /* Augmenter la taille des sous-titres dans la section about */
+    font-size: 40px; /* Augmenter la taille des sous-titres dans la section about */
   }
 
   /* Texte de la frise chronologique */
   .timeline-item .timeline-content p {
-    font-size: 26px; /* Augmenter la taille du texte dans la frise */
+    font-size: 30px; /* Augmenter la taille du texte dans la frise */
   }
 
   /* Titres "Compétences" et "Centres d'intérêts" */
@@ -220,12 +220,12 @@ blockquote{
   }
 
   .about-text ul li {
-    font-size: 26px; /* Augmenter la taille du texte des éléments de la liste */
+    font-size: 30px; /* Augmenter la taille du texte des éléments de la liste */
   }
 
   /* Citation */
   blockquote {
-    font-size: 30px; /* Agrandir la taille du texte de la citation */
+    font-size: 35px; /* Agrandir la taille du texte de la citation */
   }
 
   /* Modifications pour la frise chronologique */
