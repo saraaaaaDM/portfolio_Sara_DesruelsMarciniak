@@ -186,49 +186,50 @@ blockquote{
 }
 
 /* Pour les petits écrans de téléphone */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 35px; /* Augmente la taille des liens */
+    font-size: 40px !important; /* Augmenter la taille des liens */
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
   .intro h1 {
-    font-size: 200px; /* Augmenter la taille du titre */
+    font-size: 250px !important; /* Augmenter la taille du titre */
   }
 
   .intro p {
-    font-size: 40px; /* Augmenter la taille du sous-titre */
+    font-size: 50px !important; /* Augmenter la taille du sous-titre */
   }
 
   /* Texte sous la photo dans la section "about" */
   .about-text {
-    font-size: 25px; /* Augmenter la taille du texte sous la photo */
+    font-size: 30px !important; /* Augmenter la taille du texte sous la photo */
   }
 
   .about-text h3 {
-    font-size: 35px; /* Augmenter la taille des sous-titres dans la section about */
+    font-size: 40px !important; /* Augmenter la taille des sous-titres dans la section about */
   }
 
   /* Texte de la frise chronologique */
   .timeline-item .timeline-content p {
-    font-size: 22px; /* Augmenter la taille du texte dans la frise */
+    font-size: 28px !important; /* Augmenter la taille du texte dans la frise */
   }
 
   /* Titres "Compétences" et "Centres d'intérêts" */
   #compétences h2, #centres-d-intérêts h2 {
-    font-size: 35px; /* Augmenter la taille des titres */
+    font-size: 40px !important; /* Augmenter la taille des titres */
   }
 
   .about-text ul li {
-    font-size: 22px; /* Augmenter la taille du texte des éléments de la liste */
+    font-size: 28px !important; /* Augmenter la taille du texte des éléments de la liste */
   }
 
   /* Citation */
   blockquote {
-    font-size: 24px; /* Agrandir la taille du texte de la citation */
+    font-size: 28px !important; /* Agrandir la taille du texte de la citation */
   }
 }
+
 
 /*TIMELINE*/
 .timeline {
