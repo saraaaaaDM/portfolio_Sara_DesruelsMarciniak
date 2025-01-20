@@ -227,6 +227,23 @@ blockquote{
   blockquote {
     font-size: 24px; /* Agrandir la taille du texte de la citation */
   }
+   .timeline-item {
+    width: 80%; /* Augmenter la largeur des éléments de la timeline */
+    margin: 20px auto; /* Centrer les éléments */
+  }
+
+  /* Centrer la ligne de la frise */
+  .timeline:before {
+    left: 50%; /* Centrer la ligne de la frise */
+    transform: translateX(-50%); /* Ajuster le centrage */
+  }
+
+  /* Ajuster le style du contenu de la timeline */
+  .timeline-content {
+    width: 100%; /* Maximiser la largeur du contenu */
+    padding: 15px; /* Ajouter un peu de padding */
+  }
+}
 }
 
 
