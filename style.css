@@ -242,76 +242,68 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  /* Intro */
+  /* HEADER */
+  header {
+    font-size: 20px; /* Réduit la taille du texte dans le header */
+  }
+
   .intro h1 {
-    font-family: Brush Script MT;
-    font-size: 8rem; /* Ajustement de la taille du titre pour mobile */
-    animation: fadeIn 3s;
+    font-size: 120px; /* Réduit la taille du texte du titre principal */
   }
 
-  /* Navigation */
+  .intro p {
+    font-size: 30px; /* Réduit la taille du texte de la description */
+  }
+
+  /* NAV */
   nav ul li a {
-    text-decoration: none;
-    color: beige;
-    font-size: 2rem; /* Taille du texte des liens */
-    font-weight: bold;
+    font-size: 25px; /* Réduit la taille du texte des liens */
+    font-weight: bold; 
   }
 
-  /* Section "About" */
+  /* ABOUT SECTION */
   #about p {
-    font-size: 2rem; /* Taille du texte dans la section "about" */
+    font-size: 18px; /* Réduit la taille de la description dans About */
   }
 
   #about h3 {
-    font-size: 2.5rem; /* Taille des sous-titres dans "about" */
-  }
-
-  /* Timeline */
-  .timeline-item .timeline-content p {
-    font-size: 2rem; /* Texte de la timeline */
+    font-size: 30px; /* Réduit la taille des titres dans la section about */
   }
 
   #about ul li {
-    font-size: 1.8rem; /* Taille des éléments de la liste */
+    font-size: 20px; /* Réduit la taille du texte des éléments de la liste */
   }
 
   #about blockquote {
-    font-size: 2rem; /* Taille de la citation */
+    font-size: 20px; /* Réduit la taille des citations */
   }
 
-  /* Galerie */
+  /* TIMELINE */
+  .timeline-content p {
+    font-size: 20px; /* Réduit la taille du texte dans la timeline */
+  }
+
+  .timeline-item .timeline-content h4 {
+    font-size: 24px; /* Réduit la taille du titre dans la timeline */
+  }
+
+  /* CAROUSEL (GALLERY SECTION) */
   .gallery-item img {
-    max-width: 500px; /* Ajustement des images en mobile */
+    width: 100%; /* Utilise toute la largeur disponible sur mobile */
     height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
   }
 
-  /* Carousel buttons */
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px; /* Taille du bouton ajustée */
-    height: 80px;
-    border-radius: 50%;
-    background-color: maroon;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
+  .gallery-item video {
+    width: 100%; /* Ajuste les vidéos pour utiliser toute la largeur sur mobile */
+    height: auto;
   }
 
-  .carousel-btn.prev {
-    left: 10px;
+  /* GENERAL TEXTS IN SECTIONS */
+  section p {
+    font-size: 18px; /* Réduit la taille du texte dans toutes les sections */
   }
 
-  .carousel-btn.next {
-    right: 10px;
-    width: 40px;
-    height: 80px;
+  section h2 {
+    font-size: 28px; /* Réduit la taille du titre des sections */
   }
 }
