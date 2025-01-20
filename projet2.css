@@ -124,60 +124,6 @@ main {
     top: 0; /* Glisse pour couvrir l'image */
 }
 
-/* Au format téléphone : Mise à jour de l'affichage */
-@media (max-width: 768px) {
-    .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        margin-bottom: 30px;
-    }
-
-    .photo-grid img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Ajuster la description visible par tap (au lieu du survol) */
-    .photo-container {
-        cursor: pointer;
-    }
-
-    /* La description doit être visible lors du clic ou du tap */
-    .photo-container.active .overlay {
-        top: 0; /* Affichage du panneau sur mobile au clic */
-    }
-
-    .photo-container img:hover {
-        transform: none; /* Enlever l'effet de zoom sur mobile */
-    }
-
-    /* Texte pour montrer qu'on peut cliquer sur l'image */
-    .photo-container:after {
-        content: "Tap to view description";
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        display: block;
-    }
-
-    /* Éviter le débordement de la description sur l'image */
-    .overlay {
-        max-height: 80%; /* Limiter la hauteur de la description */
-        overflow-y: auto; /* Ajouter un scroll si la description est trop longue */
-    }
-}
-
 /* Button */
 .next-project {
     background-color: maroon;
@@ -237,4 +183,58 @@ footer {
 .social-icons a:hover i.fab.fa-instagram {
     color: #DD2A7B;
     cursor: url(".//image/curseurfleche.svg"), auto;
+}
+
+/* Au format téléphone : Mise à jour de l'affichage */
+@media (max-width: 1200px) {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .photo-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Ajuster la description visible par tap (au lieu du survol) */
+    .photo-container {
+        cursor: pointer;
+    }
+
+    /* La description doit être visible lors du clic ou du tap */
+    .photo-container.active .overlay {
+        top: 0; /* Affichage du panneau sur mobile au clic */
+    }
+
+    .photo-container img:hover {
+        transform: none; /* Enlever l'effet de zoom sur mobile */
+    }
+
+    /* Texte pour montrer qu'on peut cliquer sur l'image */
+    .photo-container:after {
+        content: "Tap to view description";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        display: block;
+    }
+
+    /* Éviter le débordement de la description sur l'image */
+    .overlay {
+        max-height: 80%; /* Limiter la hauteur de la description */
+        overflow-y: auto; /* Ajouter un scroll si la description est trop longue */
+    }
 }
