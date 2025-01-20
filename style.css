@@ -186,7 +186,7 @@ blockquote{
 }
 
 /* Pour les petits écrans de téléphone */
-@media (max-width: 999px) {
+@media (max-width: 900px) {
   /* Liens de la navbar */
   nav ul li a {
     font-size: 40px !important; /* Augmenter la taille des liens */
