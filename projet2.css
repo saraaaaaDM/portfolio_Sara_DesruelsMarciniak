@@ -193,7 +193,33 @@ footer {
     }
 
     .photo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        gap: 15px;
+    }
+
+    .photo-container {
+        display: flex; /* Alignement horizontal */
+        flex-direction: row; /* Disposition des éléments sur une ligne */
+        align-items: center; /* Centrer les éléments */
+        justify-content: flex-start;
+        gap: 15px; /* Espacement entre l'image et la description */
+    }
+
+    .photo-container img {
+        width: 60%; /* L'image occupe 60% de la largeur */
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .overlay {
+        width: 35%; /* La description occupe 35% de la largeur */
+        padding: 10px;
+        font-size: 1rem;
+        line-height: 1.4;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-align: left; /* Aligner le texte à gauche */
+        border-radius: 15px;
     }
 }
