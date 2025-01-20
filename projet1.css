@@ -4,17 +4,19 @@
     box-sizing: border-box;
 }
 
-/* Pour les petits écrans (max-width: 768px) */
 @media (max-width: 1200px) {
     /* Adapter les images dans la grille pour qu'elles ne débordent pas */
     .photo-grid img {
         width: 100%;
         max-width: 100%;
         height: auto;
-        object-fit: contain;  /* Modifie pour que l'image soit entièrement visible sans être coupée */
+        object-fit: contain;  /* Assure que l'image soit entièrement visible */
         cursor: pointer;
+        display: block; /* Eviter que les images dépassent leur conteneur */
+        margin: 0 auto; /* Centrer les images dans leur conteneur */
     }
 }
+
 
 /* Pour afficher la description sur mobile au clic, on doit ajouter un peu de JavaScript pour gérer l'état cliqué */
 
