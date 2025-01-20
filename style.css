@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -246,7 +245,7 @@ footer a:hover {
   /* Intro */
   .intro h1 {
     font-family: Brush Script MT;
-    font-size: 150px; /* Taille du titre ajustée pour mobile */
+    font-size: 8rem; /* Ajustement de la taille du titre pour mobile */
     animation: fadeIn 3s;
   }
 
@@ -254,64 +253,50 @@ footer a:hover {
   nav ul li a {
     text-decoration: none;
     color: beige;
-    font-size: 35px; /* Ajustement de la taille des liens */
-    font-weight: bold; 
+    font-size: 2rem; /* Taille du texte des liens */
+    font-weight: bold;
   }
 
   /* Section "About" */
   #about p {
-    font-size: 35px; /* Taille du texte dans la section "about" */
-  }
-
-  .carousel-container {
-    padding: 0; 
-    margin: 0 auto;
-    width: 100%; 
-    overflow: hidden; 
-    justify-content: center;
-  }
-
-  /* Timeline */
-  #about .timeline-item {
-    width: auto;
-    height: auto;
-    align-items: left;
-  }
-
-  #about .timeline-item .timeline-content p {
-    font-size: 40px; /* Texte de la timeline */
+    font-size: 2rem; /* Taille du texte dans la section "about" */
   }
 
   #about h3 {
-    font-size: 40px; /* Taille des sous-titres dans "about" */
+    font-size: 2.5rem; /* Taille des sous-titres dans "about" */
+  }
+
+  /* Timeline */
+  .timeline-item .timeline-content p {
+    font-size: 2rem; /* Texte de la timeline */
   }
 
   #about ul li {
-    font-size: 32px; /* Taille des éléments de la liste */
+    font-size: 1.8rem; /* Taille des éléments de la liste */
   }
 
   #about blockquote {
-    font-size: 30px; /* Taille de la citation */
+    font-size: 2rem; /* Taille de la citation */
   }
 
   /* Galerie */
   .gallery-item img {
-    max-width: 600px; 
-    height: auto; 
-    object-fit: contain; 
+    max-width: 500px; /* Ajustement des images en mobile */
+    height: auto;
+    object-fit: contain;
     display: block;
-    align-items: center;
+    margin: 0 auto;
   }
 
-  /* Boutons du carousel */
+  /* Carousel buttons */
   .carousel-btn {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     transform: translateY(-50%);
-    width: 45px; /* Taille du bouton ajustée */
-    height: 80px; /* Taille du bouton ajustée */
+    width: 40px; /* Taille du bouton ajustée */
+    height: 80px;
     border-radius: 50%;
-    background-color: maroon; 
+    background-color: maroon;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -321,12 +306,12 @@ footer a:hover {
   }
 
   .carousel-btn.prev {
-    left: 7px; 
+    left: 10px;
   }
 
   .carousel-btn.next {
-    right: 7px; 
-    width: 45px; /* Taille du bouton ajustée */
-    height: 80px; /* Taille du bouton ajustée */
+    right: 10px;
+    width: 40px;
+    height: 80px;
   }
 }
