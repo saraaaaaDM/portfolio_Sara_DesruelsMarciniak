@@ -4,19 +4,13 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
-    /* Adapter les images dans la grille pour qu'elles ne débordent pas */
-    .photo-grid img {
-        width: max-width;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;  /* Assure que l'image soit entièrement visible */
-        cursor: pointer;
-        display: block; /* Eviter que les images dépassent leur conteneur */
-        margin: 0 auto; /* Centrer les images dans leur conteneur */
-    }
-}
-
+@media (max-width: 768px) {
+  .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+  }
 
 /* Pour afficher la description sur mobile au clic, on doit ajouter un peu de JavaScript pour gérer l'état cliqué */
 
