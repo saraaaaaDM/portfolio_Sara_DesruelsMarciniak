@@ -3,20 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@media (max-width: 1200px) {
-    .photo-grid img {
-        width: 100%; /* Adapte l'image à la largeur du conteneur */
-        max-width: 100%;
-        height: auto;
-        object-fit: contain; /* Assure que l'image entière reste visible */
-    }
-
-    .photo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
-        gap: 10px;
-    }
-}
 /* Body Style */
 body {
     font-family: 'Arial', sans-serif;
@@ -166,3 +152,15 @@ footer{
     color: #DD2A7B;
     cursor: url(".//image/curseurfleche.svg"),auto;
   }
+
+@media (max-width: 768px) {
+    .photo-grid img {
+        object-fit: contain; /* Assurer que l'image complète est visible sans coupure */
+        max-width: 100%; /* Limite la largeur de l'image pour éviter qu'elle dépasse */
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
+        gap: 10px;
+    }
+}
