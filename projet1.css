@@ -4,27 +4,17 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
-    body {
-    background-color: red !important;
-    }
-    .photo-grid {
-        border: 5px solid red;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste les colonnes */
-        gap: 15px; /* Espacement entre les éléments */
-        margin: 0 auto; /* Centre la grille */
-        padding: 10px; /* Ajoute un padding pour éviter les débordements */
+@media (max-width: 768px) {
+    .photo-grid img {
+        width: 100%; /* Adapte l'image à la largeur du conteneur */
+        max-width: 100%;
+        height: auto;
+        object-fit: contain; /* Assure que l'image entière reste visible */
     }
 
-    .photo-grid img {
-        width: 100%; /* Adapte la largeur de l'image à celle de son conteneur */
-        max-width: 100%; /* Empêche les images de déborder */
-        height: auto; /* Maintient les proportions */
-        object-fit: cover; /* Assure que l'image remplit son espace sans distorsion */
-        border-radius: 10px; /* Ajoute des coins arrondis */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
+        gap: 10px;
     }
 }
 /* Body Style */
