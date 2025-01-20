@@ -243,20 +243,13 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 18px; /* Augmente la taille globale du texte */
-  }
-
-  header {
-    font-size: 35px; /* Agrandit le texte du header */
-  }
 
   nav ul li a {
-    font-size: 22px; /* Texte des liens de navigation */
+    font-size: 30px; /* Texte des liens de navigation */
   }
 
   .intro h1 {
-    font-size: 120px; /* Agrandit le titre principal */
+    font-size: 150px; /* Agrandit le titre principal */
   }
 
   .intro p {
@@ -268,7 +261,7 @@ footer a:hover {
   }
 
   section p {
-    font-size: 20px; /* Agrandit les paragraphes */
+    font-size: 30px; /* Agrandit les paragraphes */
   }
 
   .about-text h3 {
