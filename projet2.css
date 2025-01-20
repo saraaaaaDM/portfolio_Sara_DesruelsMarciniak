@@ -193,8 +193,8 @@ footer {
     }
 
     .photo-grid {
-        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
+        gap: 10px;
     }
 
     /* Masquer le texte uniquement sur mobile */
