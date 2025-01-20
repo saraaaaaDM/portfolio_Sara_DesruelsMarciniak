@@ -240,24 +240,9 @@ blockquote{
     font-size: 28px !important; /* Agrandir la taille du texte de la citation */
   }
   .carousel-btn {
-    font-size: 30px; /* Augmenter la taille du texte */
-    padding: 15px; /* Augmenter le padding pour les rendre plus grands */
-    width: 60px; /* Augmenter la largeur du bouton */
-    height: 80px; /* Augmenter la hauteur du bouton */
-  }
-
-  /* Bouton suivant (next) */
-  .carousel-btn.next {
-    width: 60px; /* Taille des boutons ajustée */
-    height: 80px; /* Taille des boutons ajustée */
-    font-size: 30px; /* Agrandir la taille du texte dans le bouton */
-    padding: 15px; /* Ajouter du padding pour augmenter la taille */
-  }
-  .carousel-btn.prev {
-    width: 60px; /* Taille des boutons ajustée */
-    height: 80px; /* Taille des boutons ajustée */
-    font-size: 30px; /* Agrandir la taille du texte dans le bouton */
-    padding: 15px; /* Ajouter du padding pour augmenter la taille */
+    width: 70px; /* Augmentez la largeur des boutons */
+    height: 90px; /* Augmentez la hauteur des boutons */
+    font-size: 25px; /* Augmentez la taille du texte dans les boutons */
   }
 }
 
