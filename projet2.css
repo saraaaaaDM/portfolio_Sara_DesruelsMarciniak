@@ -197,20 +197,8 @@ footer {
         gap: 15px;
     }
 
-    .photo-container {
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    /* Image */
-    .photo-container img {
-        width: 100%; /* L'image occupe 100% de la largeur */
-        height: auto;
-    }
-
     /* Masquer le texte uniquement sur mobile */
-    .overlay {
+    .photo-container .overlay {
         display: none; /* Le texte est caché sur mobile */
     }
 }
