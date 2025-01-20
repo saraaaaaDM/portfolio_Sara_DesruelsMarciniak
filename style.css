@@ -203,7 +203,7 @@ blockquote{
 
   /* Texte sous la photo dans la section "about" */
   .about-text {
-    font-size: 30px !important; /* Augmenter la taille du texte sous la photo */
+    font-size: 40px !important; /* Augmenter la taille du texte sous la photo */
   }
 
   .about-text h3 {
