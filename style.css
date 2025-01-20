@@ -193,8 +193,12 @@ blockquote{
   nav ul li a {
     text-decoration: none;
     color: beige;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: bold; 
+  }
+
+  #about p{
+    font-size: 35px;
   }
   
   .carousel-container {
@@ -205,22 +209,41 @@ blockquote{
         justify-content: center;
     }
 
+  #about .timeline-item {
+    width: auto;
+    height: auto;
+    align-items: left;
+  }
+  #about .timeline-item .timeline-content p{
+    font-size: 35px;
+  }
+
+  #about h3{
+    font-size: 40px;
+  }
+  #about ul li {
+    font-size: 32px;
+  }
+  #about blockquote{
+
+    font-size: 35px;
+  }
     
   .gallery-item img {
-        max-width: 400px; 
+        max-width: 700px; 
         height: auto; 
         object-fit: contain; 
         display: block;
         align-items: center;
     }
-
+  
     
   .carousel-btn {
         position: absolute;
         top: 50%; 
         transform: translateY(-50%);
-        width: 40px; 
-        height: 50px;
+        width: 50px; 
+        height: 90px;
         border-radius: 50%;
         background-color: maroon; 
         color: #fff;
@@ -237,6 +260,8 @@ blockquote{
 
   .carousel-btn.next {
         right: 7px; 
+        width: 50px;
+        height: 90px;
     }
 }
 
