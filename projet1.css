@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 1200px) {
+    body {
+    background-color: red !important;
+    }
     .photo-grid {
         border: 5px solid red;
         display: grid;
