@@ -185,9 +185,7 @@ blockquote{
 }
 
 /* Pour les petits écrans de téléphone */
-/* Pour les petits écrans de téléphone */
-/* Pour les petits écrans de téléphone */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Liens de la navbar */
   nav ul li a {
     font-size: 28px; /* Augmenter la taille des liens */
@@ -248,9 +246,6 @@ blockquote{
     padding: 20px; /* Ajouter un peu de padding */
   }
 }
-
-
-
 
 /*TIMELINE*/
 .timeline {
