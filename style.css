@@ -193,7 +193,14 @@ blockquote{
 @media (max-width: 1200px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 40px !important; /* Augmenter la taille des liens */
+    font-size: 35px !important;
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    padding: 10px 20px; /* Ajouter du padding pour créer de l'espace autour du texte */
+    border: 2px solid beige; /* Bordure transparente par défaut */
+    border-radius: 15px; /* Bords arrondis */
+    transition: all 0.3s ease;
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
