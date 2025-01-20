@@ -7,7 +7,7 @@
 @media (max-width: 1200px) {
     /* Adapter les images dans la grille pour qu'elles ne débordent pas */
     .photo-grid img {
-        width: 100%;
+        width: max-width;
         max-width: 100%;
         height: auto;
         object-fit: contain;  /* Assure que l'image soit entièrement visible */
