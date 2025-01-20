@@ -6,20 +6,22 @@
 
 @media (max-width: 1200px) {
     .photo-grid {
+        border: 5px solid red;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes adaptatives */
-        gap: 15px;
-        margin: 0 auto; /* Centrer la grille */
-        padding: 0 10px; /* Ajouter un padding pour éviter le débordement */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste les colonnes */
+        gap: 15px; /* Espacement entre les éléments */
+        margin: 0 auto; /* Centre la grille */
+        padding: 10px; /* Ajoute un padding pour éviter les débordements */
     }
 
     .photo-grid img {
-        width: 100%; /* Adapte la largeur de l'image à la taille du conteneur */
+        width: 100%; /* Adapte la largeur de l'image à celle de son conteneur */
         max-width: 100%; /* Empêche les images de déborder */
-        height: auto; /* Conserve les proportions */
-        object-fit: contain; /* Affiche l'image entière sans la couper */
-        border-radius: 10px; /* Bordures arrondies */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: auto; /* Maintient les proportions */
+        object-fit: cover; /* Assure que l'image remplit son espace sans distorsion */
+        border-radius: 10px; /* Ajoute des coins arrondis */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
     }
 }
 /* Body Style */
