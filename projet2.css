@@ -187,20 +187,14 @@ footer {
 
 /* Au format téléphone : Mise à jour de l'affichage */
 @media (max-width: 1200px) {
-    .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        margin-bottom: 30px;
+    .photo-grid img {
+        object-fit: contain; /* Assurer que l'image complète est visible sans coupure */
+        max-width: 100%; /* Limite la largeur de l'image pour éviter qu'elle dépasse */
     }
 
-    .photo-grid img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes adaptées aux petits écrans */
+        gap: 10px;
     }
 
     /* Ajuster la description visible par tap (au lieu du survol) */
