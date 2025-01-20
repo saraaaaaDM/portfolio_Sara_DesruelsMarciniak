@@ -61,7 +61,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: beige;
-  font-size: 20px; 
+  font-size: 20px;
+  padding: 10px 20px; /* Ajouter du padding pour créer de l'espace autour du texte */
+  border: 2px solid transparent; /* Bordure transparente par défaut */
+  border-radius: 15px; /* Bords arrondis */
+  transition: all 0.3s ease; /* Transition pour une animation fluide */
 }
 
 nav ul li a:hover {
