@@ -189,12 +189,12 @@ blockquote{
 @media (max-width: 600px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 24px; /* Augmente la taille des liens */
+    font-size: 35px; /* Augmente la taille des liens */
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
   .intro h1 {
-    font-size: 180px; /* Augmenter la taille du titre */
+    font-size: 200px; /* Augmenter la taille du titre */
   }
 
   .intro p {
@@ -203,11 +203,11 @@ blockquote{
 
   /* Texte sous la photo dans la section "about" */
   .about-text {
-    font-size: 18px; /* Augmenter la taille du texte sous la photo */
+    font-size: 25px; /* Augmenter la taille du texte sous la photo */
   }
 
   .about-text h3 {
-    font-size: 30px; /* Augmenter la taille des sous-titres dans la section about */
+    font-size: 35px; /* Augmenter la taille des sous-titres dans la section about */
   }
 
   /* Texte de la frise chronologique */
