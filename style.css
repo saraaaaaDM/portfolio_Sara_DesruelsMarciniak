@@ -186,81 +186,48 @@ blockquote {
 }
 
 /* Ajustement pour les petits écrans */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 18px; /* Réduire la taille des liens */
+    font-size: 40px; /* Réduire la taille des liens */
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
   .intro h1 {
-    font-size: 80px; /* Réduire la taille du titre */
+    font-size: 180px; /* Réduire la taille du titre */
   }
 
   .intro p {
-    font-size: 25px; /* Réduire la taille du sous-titre */
+    font-size: 35px; /* Réduire la taille du sous-titre */
   }
 
   /* Texte sous la photo dans la section "about" */
   .about-text {
-    font-size: 18px; /* Réduire la taille du texte sous la photo */
+    font-size: 25px; /* Réduire la taille du texte sous la photo */
   }
 
   .about-text h3 {
-    font-size: 22px; /* Réduire la taille des sous-titres dans la section about */
+    font-size: 30px; /* Réduire la taille des sous-titres dans la section about */
   }
 
   /* Texte de la frise chronologique */
   .timeline-item .timeline-content p {
-    font-size: 16px; /* Réduire la taille du texte dans la frise */
+    font-size: 20px; /* Réduire la taille du texte dans la frise */
   }
 
   /* Titres "Compétences" et "Centres d'intérêts" */
   #compétences h2,
   #centres-d-intérêts h2 {
-    font-size: 28px; /* Réduire la taille des titres */
+    font-size: 30px; /* Réduire la taille des titres */
   }
 
   .about-text ul li {
-    font-size: 18px; /* Réduire la taille du texte des éléments de la liste */
+    font-size: 20px; /* Réduire la taille du texte des éléments de la liste */
   }
 
   /* Citation */
   blockquote {
-    font-size: 18px; /* Réduire la taille du texte de la citation */
-  }
-
-  /* Ajuster les images sur mobile */
-  .gallery-item img,
-  .about-img {
-    width: 100%; /* Assurez-vous que l'image occupe toute la largeur */
-    height: auto; /* Garder les proportions des images */
-    object-fit: cover; /* Cacher les parties indésirables de l'image */
-  }
-
-  /* Réduction de l'espacement */
-  section {
-    padding: 40px 10px; /* Réduire l'espacement des sections */
-  }
-
-  .timeline-item {
-    flex-direction: column; /* Organiser la timeline verticalement sur mobile */
-    align-items: flex-start;
-  }
-
-  .timeline-content {
-    width: 100%; /* Ajuster la largeur de la timeline sur mobile */
-  }
-
-  /* Gestion des boutons dans le carousel */
-  .carousel-btn {
-    font-size: 20px; /* Réduire la taille des boutons */
-    padding: 8px 15px; /* Réduire le padding */
-  }
-
-  .carousel-item img {
-    width: 100%; /* Assurer que les images du carousel s'adaptent à la largeur */
-    height: auto;
+    font-size: 20px; /* Réduire la taille du texte de la citation */
   }
 }
 
