@@ -14,26 +14,6 @@
         object-fit: contain;  /* Modifie pour que l'image soit entièrement visible sans être coupée */
         cursor: pointer;
     }
-
-    /* Masquer la description par défaut */
-    .photo-grid .description {
-        display: none;  /* La description est cachée par défaut */
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    /* Ajouter un effet de "toggle" pour afficher la description sur mobile */
-    .photo-grid img.clicked + .description {
-        display: block;  /* Affiche la description lorsque l'image est cliquée */
-    }
-
-    /* Taille du texte pour la description */
-    .photo-grid p {
-        font-size: 1rem;
-        max-width: 100%;
-        margin-top: 10px;
-    }
 }
 
 /* Pour afficher la description sur mobile au clic, on doit ajouter un peu de JavaScript pour gérer l'état cliqué */
