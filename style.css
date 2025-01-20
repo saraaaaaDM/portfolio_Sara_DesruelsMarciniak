@@ -228,6 +228,22 @@ blockquote{
   blockquote {
     font-size: 24px; /* Agrandir la taille du texte de la citation */
   }
+
+  .timeline-item {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .timeline-date {
+    position: relative;
+    top: 0;
+    left: 10px;
+    margin-right: 20px;
+  }
+
+  .timeline-content {
+    width: 60%;
+  }
 }
 
 /*TIMELINE*/
@@ -307,24 +323,6 @@ blockquote{
   font-size: 16px;
   color: #5e3b25;
   line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .timeline-item {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .timeline-date {
-    position: relative;
-    top: 0;
-    left: 10px;
-    margin-right: 20px;
-  }
-
-  .timeline-content {
-    width: 60%;
-  }
 }
 
 .icons2{
