@@ -188,7 +188,7 @@ blockquote{
 @media (max-width: 768px) {
   /* Liens de la navbar */
   nav ul li a {
-    font-size: 30px; /* Augmente la taille des liens */
+    font-size: 45px; /* Augmente la taille des liens */
   }
 
   /* Titre et sous-titre de l'écran d'accueil */
