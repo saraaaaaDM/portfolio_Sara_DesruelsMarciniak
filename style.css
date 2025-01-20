@@ -242,32 +242,64 @@ footer a:hover {
   cursor: url("./image/curseurfleche.svg"), auto;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    height: auto;
+  body {
+    font-size: 18px; /* Augmente la taille globale du texte */
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
+  header {
+    font-size: 35px; /* Agrandit le texte du header */
+  }
+
+  nav ul li a {
+    font-size: 22px; /* Texte des liens de navigation */
   }
 
   .intro h1 {
-    font-size: 5rem;
+    font-size: 120px; /* Agrandit le titre principal */
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
+  .intro p {
+    font-size: 30px; /* Agrandit le sous-titre */
   }
 
-  .timeline {
-    padding: 2rem 0;
+  section h2 {
+    font-size: 35px; /* Agrandit les titres des sections */
+  }
+
+  section p {
+    font-size: 20px; /* Agrandit les paragraphes */
+  }
+
+  .about-text h3 {
+    font-size: 30px; /* Agrandit les sous-titres */
+  }
+
+  .about-text li {
+    font-size: 18px; /* Texte des listes */
   }
 
   .timeline-date {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    font-size: 16px; /* Texte des dates de la timeline */
+  }
+
+  .timeline-content h4 {
+    font-size: 20px; /* Sous-titres de la timeline */
+  }
+
+  .timeline-content p {
+    font-size: 18px; /* Texte des descriptions de la timeline */
+  }
+
+  footer {
+    font-size: 16px; /* Texte du footer */
+  }
+
+  .social-icons a i {
+    font-size: 2.5rem; /* Icônes des réseaux sociaux */
+  }
+
+  .gallery-item a {
+    font-size: 20px; /* Lien des galeries */
   }
 }
