@@ -184,7 +184,7 @@ blockquote{
   background-color: #F5F5DC;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 768px) {
   .intro h1{
     font-family: Brush Script MT;
     font-size: 150px;
@@ -345,7 +345,7 @@ blockquote{
   line-height: 1.6;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .timeline-item {
     flex-direction: row;
     justify-content: flex-start;
