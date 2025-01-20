@@ -243,56 +243,90 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-
-  nav ul li a {
-    font-size: 30px; /* Texte des liens de navigation */
-  }
-
+  /* Intro */
   .intro h1 {
-    font-size: 150px; /* Agrandit le titre principal */
+    font-family: Brush Script MT;
+    font-size: 120px; /* Taille du titre ajustée pour mobile */
+    animation: fadeIn 3s;
   }
 
-  .intro p {
-    font-size: 30px; /* Agrandit le sous-titre */
+  /* Navigation */
+  nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 22px; /* Ajustement de la taille des liens */
+    font-weight: bold; 
   }
 
-  section h2 {
-    font-size: 35px; /* Agrandit les titres des sections */
+  /* Section "About" */
+  #about p {
+    font-size: 30px; /* Taille du texte dans la section "about" */
   }
 
-  section p {
-    font-size: 30px; /* Agrandit les paragraphes */
+  .carousel-container {
+    padding: 0; 
+    margin: 0 auto;
+    width: 100%; 
+    overflow: hidden; 
+    justify-content: center;
   }
 
-  .about-text h3 {
-    font-size: 30px; /* Agrandit les sous-titres */
+  /* Timeline */
+  #about .timeline-item {
+    width: auto;
+    height: auto;
+    align-items: left;
   }
 
-  .about-text li {
-    font-size: 18px; /* Texte des listes */
+  #about .timeline-item .timeline-content p {
+    font-size: 30px; /* Texte de la timeline */
   }
 
-  .timeline-date {
-    font-size: 16px; /* Texte des dates de la timeline */
+  #about h3 {
+    font-size: 35px; /* Taille des sous-titres dans "about" */
   }
 
-  .timeline-content h4 {
-    font-size: 20px; /* Sous-titres de la timeline */
+  #about ul li {
+    font-size: 28px; /* Taille des éléments de la liste */
   }
 
-  .timeline-content p {
-    font-size: 18px; /* Texte des descriptions de la timeline */
+  #about blockquote {
+    font-size: 30px; /* Taille de la citation */
   }
 
-  footer {
-    font-size: 16px; /* Texte du footer */
+  /* Galerie */
+  .gallery-item img {
+    max-width: 600px; 
+    height: auto; 
+    object-fit: contain; 
+    display: block;
+    align-items: center;
   }
 
-  .social-icons a i {
-    font-size: 2.5rem; /* Icônes des réseaux sociaux */
+  /* Boutons du carousel */
+  .carousel-btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 45px; /* Taille du bouton ajustée */
+    height: 80px; /* Taille du bouton ajustée */
+    border-radius: 50%;
+    background-color: maroon; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
   }
 
-  .gallery-item a {
-    font-size: 20px; /* Lien des galeries */
+  .carousel-btn.prev {
+    left: 7px; 
+  }
+
+  .carousel-btn.next {
+    right: 7px; 
+    width: 45px; /* Taille du bouton ajustée */
+    height: 80px; /* Taille du bouton ajustée */
   }
 }
