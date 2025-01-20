@@ -184,7 +184,7 @@ blockquote{
   background-color: #F5F5DC;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 970px) {
   .intro h1{
     font-family: Brush Script MT;
     font-size: 150px;
