@@ -100,6 +100,7 @@ ul{
 .intro p{
   font-family:  Brush Script MT; 
   font-size: 50px;
+  color: maroon;
 }
 
 #home:before {
@@ -184,87 +185,50 @@ blockquote{
   background-color: #F5F5DC;
 }
 
-@media (max-width: 768px) {
-  .intro h1{
-    font-family: Brush Script MT;
-    font-size: 150px;
-    animation: fadeIn 3s;
-  }
+/* Pour les petits écrans de téléphone */
+@media (max-width: 600px) {
+  /* Liens de la navbar */
   nav ul li a {
-    text-decoration: none;
-    color: beige;
-    font-size: 25px;
-    font-weight: bold; 
+    font-size: 24px; /* Augmente la taille des liens */
   }
 
-  #about p{
-    font-size: 35px;
-  }
-  
-  .carousel-container {
-        padding: 0; 
-        margin: 0 auto;
-        width: 100%; 
-        overflow: hidden; 
-        justify-content: center;
-    }
-
-  #about .timeline-item {
-    width: auto;
-    height: auto;
-    align-items: left;
-  }
-  #about .timeline-item .timeline-content p{
-    font-size: 35px;
+  /* Titre et sous-titre de l'écran d'accueil */
+  .intro h1 {
+    font-size: 180px; /* Augmenter la taille du titre */
   }
 
-  #about h3{
-    font-size: 40px;
+  .intro p {
+    font-size: 40px; /* Augmenter la taille du sous-titre */
   }
-  #about ul li {
-    font-size: 32px;
+
+  /* Texte sous la photo dans la section "about" */
+  .about-text {
+    font-size: 18px; /* Augmenter la taille du texte sous la photo */
   }
-  #about blockquote{
 
-    font-size: 35px;
+  .about-text h3 {
+    font-size: 30px; /* Augmenter la taille des sous-titres dans la section about */
   }
-    
-  .gallery-item img {
-        max-width: 700px; 
-        height: auto; 
-        object-fit: contain; 
-        display: block;
-        align-items: center;
-    }
-  
-    
-  .carousel-btn {
-        position: absolute;
-        top: 50%; 
-        transform: translateY(-50%);
-        width: 50px; 
-        height: 90px;
-        border-radius: 50%;
-        background-color: maroon; 
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-    }
 
-  .carousel-btn.prev {
-        left: 7px; 
-    }
+  /* Texte de la frise chronologique */
+  .timeline-item .timeline-content p {
+    font-size: 22px; /* Augmenter la taille du texte dans la frise */
+  }
 
-  .carousel-btn.next {
-        right: 7px; 
-        width: 50px;
-        height: 90px;
-    }
+  /* Titres "Compétences" et "Centres d'intérêts" */
+  #compétences h2, #centres-d-intérêts h2 {
+    font-size: 35px; /* Augmenter la taille des titres */
+  }
+
+  .about-text ul li {
+    font-size: 22px; /* Augmenter la taille du texte des éléments de la liste */
+  }
+
+  /* Citation */
+  blockquote {
+    font-size: 24px; /* Agrandir la taille du texte de la citation */
+  }
 }
-
 
 /*TIMELINE*/
 .timeline {
