@@ -5,18 +5,23 @@
 }
 
 @media (max-width: 1200px) {
-  .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-bottom: 30px;
-  }
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes adaptatives */
+        gap: 15px;
+        margin: 0 auto; /* Centrer la grille */
+        padding: 0 10px; /* Ajouter un padding pour éviter le débordement */
+    }
 
-/* Pour afficher la description sur mobile au clic, on doit ajouter un peu de JavaScript pour gérer l'état cliqué */
-
-
-
-
+    .photo-grid img {
+        width: 100%; /* Adapte la largeur de l'image à la taille du conteneur */
+        max-width: 100%; /* Empêche les images de déborder */
+        height: auto; /* Conserve les proportions */
+        object-fit: contain; /* Affiche l'image entière sans la couper */
+        border-radius: 10px; /* Bordures arrondies */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
 /* Body Style */
 body {
     font-family: 'Arial', sans-serif;
