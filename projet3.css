@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 768px) {
   .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
