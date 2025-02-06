@@ -32,6 +32,8 @@ header {
 
 .logo-container {
   padding-left: 10px; 
+  height: 7rem;
+  width: auto;
 }
 
 .logo-container:hover {
