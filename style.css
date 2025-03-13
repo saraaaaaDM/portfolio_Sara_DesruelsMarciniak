@@ -85,7 +85,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./image/ton-image.jpg') no-repeat center center/cover;
+  background: url('./image/accueil.png') no-repeat center center/cover;
   position: relative;
   margin-right: 0;
 }
