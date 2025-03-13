@@ -85,7 +85,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #a3886b 30%, #b8a089 60%, #d6c4b1 80%, #f4ede3 100%);
+  background: url('./image/ton-image.jpg') no-repeat center center/cover;
   position: relative;
   margin-right: 0;
 }
