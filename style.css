@@ -83,6 +83,7 @@ ul{
   height: 100vh;
   display: flex;
   background: url('./image/accueil.png') no-repeat center center/cover;
+  vertical-align: center;
   position: relative;
   margin-right: 0;
 }
