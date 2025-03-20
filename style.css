@@ -14,7 +14,7 @@ body{
 }
 
 #logo {
-  width: 150px;
+  width: 120px;
 }
 
 header {
@@ -30,11 +30,6 @@ header {
   height: 8rem; 
 }
 
-.logo-container {
-  padding-left: 10px; 
-  height: 7rem;
-  width: auto;
-}
 
 .logo-container:hover {
   cursor: url('./image/curseur.svg'), auto;
