@@ -99,7 +99,7 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateZ(-5px);
 }
 
 form .form-group {
