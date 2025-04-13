@@ -15,14 +15,33 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+  
 }
 
 .navbar {
   position: sticky;
   top: 0;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  background-color: #F5F5DC; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
+  transition: background-color 0.6s ease; 
+}
+
+.navbar .logo{
+  color: #6f0000;
+}
+
+.navbar.scrolled {
+  background-color: #6f0000; 
+}
+
+.navbar.scrolled a {
+  color: #F5F5DC; 
+}
+
+.navbar.scrolled .logo{
+  color: #F5F5DC; 
 }
 
 .navbar .container {
@@ -40,7 +59,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #6f0000;
   font-weight: 500;
 }
 
