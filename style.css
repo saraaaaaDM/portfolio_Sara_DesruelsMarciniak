@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Limelight', sans-serif;
   color: #333;
-  background: #F5F5DC;
+   background-color: #F5F5DC;
   line-height: 1.6;
 }
 
@@ -65,8 +65,8 @@ body {
 
 .hero {
   background-color: #6f0000;
-  color: #B22222;
-  padding: 100px 0;
+  color: #db4545;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@ h2 {
 }
 
 .card:hover {
-  transform: translateZ(-5px);
+  transform: translateY(-5px);
 }
 
 form .form-group {
