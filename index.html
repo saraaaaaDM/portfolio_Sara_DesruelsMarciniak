@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Pro - Ton Nom</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">TonNom</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#portfolio">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Bonjour, je suis <span>Ton Nom</span></h2>
+      <p>Développeur Web & Créateur d'expériences numériques</p>
+      <a href="#portfolio" class="btn">Voir mes projets</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <p>Je suis passionné de développement web, spécialisé en design UI/UX et en développement front-end. J’aide les entreprises à construire des expériences digitales modernes et efficaces.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2>Mes Projets</h2>
+      <div class="grid">
+        <div class="card"> <h3>Projet 1</h3> <p>Site vitrine pour un client.</p> </div>
+        <div class="card"> <h3>Projet 2</h3> <p>Landing page interactive.</p> </div>
+        <div class="card"> <h3>Projet 3</h3> <p>Application React + API.</p> </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Me contacter</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" required placeholder="Nom">
+        </div>
+        <div class="form-group">
+          <input type="email" required placeholder="Email">
+        </div>
+        <div class="form-group">
+          <textarea required placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+        <p class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ton Nom. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
