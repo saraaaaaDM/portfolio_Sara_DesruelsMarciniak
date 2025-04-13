@@ -47,7 +47,7 @@ body {
 .hero {
   background: #800000;
   background: linear-gradient(90deg,rgba(128, 0, 0, 1) 0%, rgba(84, 1, 1, 1) 44%);
-  color: white;
+  color: beige;
   padding: 100px 0;
   text-align: center;
 }
