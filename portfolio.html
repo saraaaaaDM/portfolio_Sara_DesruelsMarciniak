@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Pro - Ton Nom</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero span {
+      color: #ffdd57;
+    }
+
+    .btn {
+      background: #ffdd57;
+      color: #222;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffd633;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .portfolio .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #f7f7f7;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    form .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #f1f1f1;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">TonNom</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#portfolio">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Bonjour, je suis <span>Ton Nom</span></h2>
+      <p>Développeur Web & Créateur d'expériences numériques</p>
+      <a href="#portfolio" class="btn">Voir mes projets</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <p>Je suis passionné de développement web, spécialisé en design UI/UX et en développement front-end. J’aide les entreprises à construire des expériences digitales modernes et efficaces.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2>Mes Projets</h2>
+      <div class="grid">
+        <div class="card"> <h3>Projet 1</h3> <p>Site vitrine pour un client.</p> </div>
+        <div class="card"> <h3>Projet 2</h3> <p>Landing page interactive.</p> </div>
+        <div class="card"> <h3>Projet 3</h3> <p>Application React + API.</p> </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Me contacter</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" required placeholder="Nom">
+        </div>
+        <div class="form-group">
+          <input type="email" required placeholder="Email">
+        </div>
+        <div class="form-group">
+          <textarea required placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+        <p class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ton Nom. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.querySelector(".form-message").textContent = "Message envoyé avec succès !";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
