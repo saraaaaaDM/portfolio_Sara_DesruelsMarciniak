@@ -47,8 +47,8 @@ body {
 .hero {
   background: #800000;
   background: linear-gradient(90deg,rgba(128, 0, 0, 1) 0%, rgba(84, 1, 1, 1) 44%);
-  color: beige;
-  padding: 200px 0;
+  color: #B22222;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -57,11 +57,11 @@ body {
 }
 
 .hero span {
-  color: #ffdd57;
+  color: #FEF972;
 }
 
 .btn {
-  background: #F5f5dc;
+  background: #FEF972;
   color: #222;
   padding: 0.8rem 1.5rem;
   margin-top: 1rem;
