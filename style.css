@@ -54,13 +54,14 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.8rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: #6f0000;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .hero {
@@ -71,13 +72,18 @@ body {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.hero p{
+  font-size: 1.5rem;
 }
 
 .hero span {
   color: #FEF972;
 }
 
+.typewriter {
   display: inline-block;
   overflow: hidden;
   border-right: .15em solid #B22222;
@@ -99,6 +105,7 @@ body {
     border-color: transparent;
   }
 }
+
 
 .btn {
   background: #FEF972;
