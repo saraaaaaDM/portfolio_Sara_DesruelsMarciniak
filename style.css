@@ -78,6 +78,28 @@ body {
   color: #FEF972;
 }
 
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #B22222;
+  white-space: nowrap;
+  animation: typing 2.4s steps(30, end), blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .btn {
   background: #FEF972;
   color: #222;
