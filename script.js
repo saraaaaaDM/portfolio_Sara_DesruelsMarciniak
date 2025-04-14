@@ -5,14 +5,14 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
   this.reset();
 });
 
-// Détecter lorsque la navbar dépasse la section "hero" et appliquer la classe "scrolled"
+
 window.addEventListener('scroll', function() {
   const navbar = document.querySelector('.navbar');
   const hero = document.querySelector('.hero');
   
   if (window.scrollY > hero.offsetHeight) {
-    navbar.classList.add('scrolled'); // Ajoute la classe "scrolled" quand on dépasse le hero
+    navbar.classList.add('scrolled'); 
   } else {
-    navbar.classList.remove('scrolled'); // Retire la classe "scrolled" quand on est encore en haut
+    navbar.classList.remove('scrolled'); 
   }
 });
