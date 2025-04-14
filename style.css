@@ -149,6 +149,16 @@ h2 {
   transform: translateY(-5px);
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  height: 100%;
+}
+
 form .form-group {
   margin-bottom: 1.5rem;
 }
