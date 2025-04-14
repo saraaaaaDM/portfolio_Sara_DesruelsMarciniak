@@ -149,6 +149,27 @@ h2 {
   transform: translateY(-5px);
 }
 
+.card .btn-hover {
+  display: none;
+  margin-top: 1rem;
+  background-color: #FEF972;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card .btn-hover:hover {
+  background-color: #ffd633;
+}
+
+/* Affiche le bouton au hover de la carte */
+.card:hover .btn-hover {
+  display: inline-block;
+}
+
 form .form-group {
   margin-bottom: 1.5rem;
 }
