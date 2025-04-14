@@ -7,7 +7,7 @@
 body {
   font-family: 'Englebert', sans-serif;
   color: #333;
-  background-color: #F5F5DC;
+   background-color: #F5F5DC;
   line-height: 1.6;
 }
 
@@ -15,32 +15,33 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+  
 }
 
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #F5F5DC;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5DC; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; 
 }
 
-.navbar .logo {
+.navbar .logo{
   color: #6f0000;
 }
 
 .navbar.scrolled {
-  background-color: #6f0000;
+  background-color: #6f0000; 
 }
 
 .navbar.scrolled a {
-  color: #F5F5DC;
+  color: #F5F5DC; 
 }
 
-.navbar.scrolled .logo {
-  color: #F5F5DC;
+.navbar.scrolled .logo{
+  color: #F5F5DC; 
 }
 
 .navbar .container {
@@ -66,7 +67,7 @@ body {
 .hero {
   background-color: #6f0000;
   color: #db4545;
-  padding: 150px 0;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -74,7 +75,7 @@ body {
   font-size: 3rem;
 }
 
-.hero p {
+.hero p{
   font-size: 1.5rem;
 }
 
@@ -105,6 +106,7 @@ body {
   }
 }
 
+
 .btn {
   background: #FEF972;
   color: #222;
@@ -129,47 +131,22 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Structure de la grille pour les cartes */
-.portfolio-grid {
+.portfolio .grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* Style des cartes de projet */
-.project-card {
+.card {
   background: #f7f7f7;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
 
-.project-card:hover {
+.card:hover {
   transform: translateY(-5px);
-}
-
-/* Le bouton "Voir le projet" est masqué au départ */
-.view-project-btn {
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 1.5rem;
-  background-color: #FEF972;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  color: #222;
-  text-decoration: none;
-  font-weight: bold;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-  display: inline-block;
-}
-
-/* Affichage du bouton lorsqu'on survole la carte */
-.project-card:hover .view-project-btn {
-  opacity: 1;
-  visibility: visible;
 }
 
 form .form-group {
@@ -188,4 +165,4 @@ footer {
   background: #f1f1f1;
   padding: 2rem 0;
   text-align: center;
-}
+}   
