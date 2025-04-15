@@ -139,12 +139,6 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.portfolio .grid > a:nth-child(5),
-.portfolio .grid > a:nth-child(6),
-.portfolio .grid > a:nth-child(7) {
-  transform: translateX(60%);
-}
-
 .card {
   background: #f7f7f7;
   padding: 2rem;
