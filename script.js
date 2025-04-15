@@ -13,6 +13,6 @@ window.addEventListener('scroll', function() {
   if (window.scrollY > hero.offsetHeight) {
     navbar.classList.add('scrolled'); 
   } else {
-    navbar.classList.remove('scrolled'); 
+    navbar.classList.remove('scrolled');
   }
 });
