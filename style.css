@@ -53,7 +53,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.8rem;
 }
 
 .navbar a {
