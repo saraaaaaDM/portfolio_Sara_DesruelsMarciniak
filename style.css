@@ -53,14 +53,14 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: #6f0000;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 
 .hero {
