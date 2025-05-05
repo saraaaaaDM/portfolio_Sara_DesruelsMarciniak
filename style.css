@@ -29,7 +29,7 @@
   
   .navbar .logo-img {
     width: auto;
-    height: 80px;  /* Limite la hauteur du logo */
+    height: 60px;  /* Limite la hauteur du logo */
 }
   
   .navbar.scrolled {
