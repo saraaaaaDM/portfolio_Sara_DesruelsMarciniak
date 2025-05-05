@@ -198,7 +198,7 @@
 
 @media (max-width: 1200px) {
   .navbar .logo-img {
-    height: 40px; /* Réduit encore plus sur mobile */
+    height: 50px; /* Réduit encore plus sur mobile */
   }
 
   .navbar a {
