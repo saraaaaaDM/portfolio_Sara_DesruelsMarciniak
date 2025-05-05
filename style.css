@@ -201,15 +201,12 @@
     height: 40px; /* Réduit encore plus sur mobile */
   }
 
-  .navbar .container {
-    flex-direction: column;
-    align-items: center;
+  .navbar a {
+    font-size: 0.85rem; /* Légère réduction des liens */
+    padding: 0 0.5rem;   /* Moins d’espace horizontal */
   }
 
-  .navbar nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+  .navbar ul {
+    gap: 1rem; /* Un peu moins d’espace entre les liens */
   }
-}
   
