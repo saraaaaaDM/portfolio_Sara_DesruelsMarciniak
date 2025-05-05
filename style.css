@@ -196,7 +196,7 @@
     text-align: center;
   }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .navbar .logo-img {
     height: 40px; /* Réduit encore plus sur mobile */
   }
