@@ -29,7 +29,7 @@
   
   .navbar .logo-img {
     width: auto;
-    height: 60px;  /* Limite la hauteur du logo */
+    height: 80px;  /* Limite la hauteur du logo */
 }
   
   .navbar.scrolled {
@@ -195,4 +195,21 @@
     padding: 2rem 0;
     text-align: center;
   }
+
+@media (max-width: 600px) {
+  .navbar .logo-img {
+    height: 40px; /* Réduit encore plus sur mobile */
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
   
