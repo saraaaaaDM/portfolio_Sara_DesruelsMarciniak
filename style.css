@@ -94,6 +94,134 @@
     white-space: nowrap;
     animation: typing 2.4s steps(30, end), blink 0.6s step-end infinite;
   }
+
+.hero1 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero1 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero1 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero2 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero2 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  
+  .hero2 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero3 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero3 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero3 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero4 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero4 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero4 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+  
+
+  .hero5 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero5 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero5 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero6 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero6 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero6 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero7 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero7 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero7 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
+
+
+  .hero8 {
+    background-color: #6f0000;
+    color: #db4545;
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero8 h2 {
+    font-size: 3rem;
+    color: #FEF972;
+  }
+  .hero8 p {
+    font-size: 1.5rem;
+    color: #db4545;
+  }
   
   @keyframes typing {
     from {
