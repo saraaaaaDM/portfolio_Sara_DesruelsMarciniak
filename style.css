@@ -343,7 +343,7 @@ h2 {
 }
 
 .card:hover {
-  background-color: #6f0000;
+  border-color: #6f0000;
   color: #db4545;
   transform: scale(1.02);
 }
