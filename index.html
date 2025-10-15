@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,17 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+  <link rel="icon" href="/logo-rouge.png" media="(prefers-color-scheme: light)"/> <!--Logo rouge quand le système de l'appareil est clair-->
+  <link rel="icon" href="/logo-blanc.png" media="(prefers-color-scheme: dark)"/><!--Logo blanc quand le système de l'appareil est sombre-->
 </head>
+
 <body>
 
   <header class="navbar">
     <div class="container">
-        <a href="#home" class="logo">
-            <img src="logo-rouge.png" alt="Logo Sara" class="logo-img" />
-          </a>
+      <a href="#home" class="logo">
+        <img src="logo-rouge.png" alt="Logo Sara" class="logo-img" />
+      </a>
       <nav>
         <ul>
           <li><a href="#home">Accueil</a></li>
@@ -39,10 +43,11 @@
   <section id="about" class="section">
     <div class="container">
       <h2>À propos de moi</h2>
-      <p>Je suis Sara Desruels-Marciniak, étudiante à l'école GOBELINS à Paris en DN MADE Numérique-coder sa créativité. 
-        Je sors d'un baccalauréat général avec les spécialités Anglais et Informatique. Depuis maintenant deux ans je 
-        pratique le code HTML, CSS, et la programmation Python. Passionnée par la photographie, le développement web, 
-        je cherche constamment à repousser mes limites et apprendre toujours plus. Je suis disponible, n'hésitez pas à me 
+      <p>Je suis Sara Desruels-Marciniak, étudiante à l'école GOBELINS à Paris en DN MADE Numérique-coder sa créativité.
+        Je sors d'un baccalauréat général avec les spécialités Anglais et Informatique. Depuis maintenant deux ans je
+        pratique le code HTML, CSS, et la programmation Python. Passionnée par la photographie, le développement web,
+        je cherche constamment à repousser mes limites et apprendre toujours plus. Je suis disponible, n'hésitez pas à
+        me
         contacter !</p>
     </div>
   </section>
@@ -52,49 +57,52 @@
       <h2>Mes Projets</h2>
       <div class="grid">
         <a href="projet1.html" class="card-link">
-        <div class="card">
-        <h3>Illustrations</h3>
-        <p>Mon imaginiare visuel</p>
-        </div>
+          <div class="card">
+            <h3>Illustrations</h3>
+            <p>Mon imaginiare visuel</p>
+          </div>
         </a>
         <a href="projet2.html" class="card-link">
-        <div class="card"> 
-        <h3>Photographies</h3> 
-        <p>Le réel en images</p> </div>
+          <div class="card">
+            <h3>Photographies</h3>
+            <p>Le réel en images</p>
+          </div>
         </a>
-        <a href="projet7.html" class="card-link offset">
-        <div class="card">
-        <h3>Développement web</h3> 
-        <p>L'art en numérique</p> </div>
+        <a href="projet3.html" class="card-link">
+          <div class="card">
+            <h3>Développement web</h3>
+            <p>L'art en numérique</p>
+          </div>
         </a>
-       <a href="projet8.html" class="card-link offset">
-        <div class="card">
-        <h3>Design graphique</h3> 
-        <p>Un langage visuel</p> </div>
+        <a href="projet4.html" class="card-link">
+          <div class="card">
+            <h3>Design graphique</h3>
+            <p>Un langage visuel</p>
+          </div>
         </a>
-        
+
       </div>
     </div>
   </section>
 
   <section id="contact" class="section">
-  <div class="container">
-    <h2>Me contacter</h2>
-    <form id="contact-form">
-      <div class="form-group">
-        <input type="text" name="nom" required placeholder="Nom">
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" required placeholder="Email">
-      </div>
-      <div class="form-group">
-        <textarea name="message" required placeholder="Message"></textarea>
-      </div>
-      <button type="submit" class="btn">Envoyer</button>
-      <p class="form-message"></p>
-    </form>
-  </div>
-</section>
+    <div class="container">
+      <h2>Me contacter</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" name="nom" required placeholder="Nom">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" required placeholder="Email">
+        </div>
+        <div class="form-group">
+          <textarea name="message" required placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+        <p class="form-message"></p>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -104,4 +112,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

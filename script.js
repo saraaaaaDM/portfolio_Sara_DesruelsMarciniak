@@ -1,20 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.carousel-btn.next');
+  const prevButton = document.querySelector('.carousel-btn.prev');
 
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    document.querySelector(".form-message").textContent = "Message envoyé avec succès !";
-    this.reset();
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    track.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
+  }
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
   });
-  
-  window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    const hero = document.querySelector('.hero');
-    const logoImg = document.querySelector('.logo-img');
-  
-    if (window.scrollY > hero.offsetHeight) {
-      navbar.classList.add('scrolled');
-      logoImg.src = "logo-blanc.png"; // logo après scroll
-    } else {
-      navbar.classList.remove('scrolled');
-      logoImg.src = "logo-rouge.png"; // logo dans le Hero
-    }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
   });
+
+});

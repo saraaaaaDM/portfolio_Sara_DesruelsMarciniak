@@ -21,27 +21,28 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #F5F5DC; 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #F5F5DC;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transition: background-color 0.6s ease; 
+  transition: background-color 0.6s ease;
 }
 
 .navbar .logo-img {
   width: auto;
-  height: 90px;  /* Limite la hauteur du logo */
+  height: 90px;
+  /* Limite la hauteur du logo */
 }
 
 .navbar.scrolled {
-  background-color: #6f0000; 
+  background-color: #6f0000;
 }
 
 .navbar.scrolled a {
-  color: #F5F5DC; 
+  color: #F5F5DC;
 }
 
 .navbar.scrolled .logo {
-  color: #F5F5DC; 
+  color: #F5F5DC;
 }
 
 .navbar .container {
@@ -83,7 +84,7 @@ body {
   color: #FEF972;
 }
 
-.container p{
+.container p {
   font-size: 1.2rem;
 }
 
@@ -103,47 +104,57 @@ body {
   padding: 150px 0;
   text-align: center;
 }
+
 .hero1 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero1 p {
   font-size: 1.5rem;
   color: #db4545;
 }
+
 .illustration-section {
-background-color: #F5F5DC;
-padding: 4rem 0;
+  background-color: #F5F5DC;
+  padding: 4rem 0;
 }
+
 .illustration-block {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10rem;
-margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 4rem;
 }
+
 .illustration-block.reverse {
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
+
 .illustration-img {
-  aspect-ratio: 6 / 7; /* garde un ratio (ex: 250/300) */
+  aspect-ratio: 6 / 7;
+  /* garde un ratio (ex: 250/300) */
   width: 350px;
   background-color: #ccc;
   border-radius: 20px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .illustration-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 .illustration-text {
-max-width: 600px;
-font-size: 1.2rem;
-color: #222;
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #222;
 }
+
 @media (max-width: 768px) {
   .illustration-block {
     flex-direction: column !important;
@@ -159,20 +170,43 @@ color: #222;
 
   .illustration-text {
     max-width: 90%;
-    font-size: 1rem;
+    font-size: 20px;
+    margin-bottom: Opx;
   }
 }
 
+/*NEXT BUTTON*/
+.next-project {
+  background-color: rgb(128, 0, 0);
+  color: beige;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: scale 0.3s ease;
+  margin: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: 40px;
+  /* espace depuis le bord droit */
+}
 
+.next-project:hover {
+  background-color: rgba(128, 0, 0, 0.856);
+  scale: 1.05;
+}
 
-
-
+/*HERO SECTIONS*/
 .hero2 {
   background-color: #6f0000;
   color: #db4545;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero2 h2 {
   font-size: 3rem;
   color: #FEF972;
@@ -183,22 +217,22 @@ color: #222;
   color: #db4545;
 }
 
-
 .hero3 {
   background-color: #6f0000;
   color: #db4545;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero3 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero3 p {
   font-size: 1.5rem;
   color: #db4545;
 }
-
 
 .hero4 {
   background-color: #6f0000;
@@ -206,15 +240,16 @@ color: #222;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero4 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero4 p {
   font-size: 1.5rem;
   color: #db4545;
 }
-
 
 .hero5 {
   background-color: #6f0000;
@@ -222,15 +257,16 @@ color: #222;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero5 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero5 p {
   font-size: 1.5rem;
   color: #db4545;
 }
-
 
 .hero6 {
   background-color: #6f0000;
@@ -238,15 +274,16 @@ color: #222;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero6 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero6 p {
   font-size: 1.5rem;
   color: #db4545;
 }
-
 
 .hero7 {
   background-color: #6f0000;
@@ -254,15 +291,16 @@ color: #222;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero7 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero7 p {
   font-size: 1.5rem;
   color: #db4545;
 }
-
 
 .hero8 {
   background-color: #6f0000;
@@ -270,10 +308,12 @@ color: #222;
   padding: 150px 0;
   text-align: center;
 }
+
 .hero8 h2 {
   font-size: 3rem;
   color: #FEF972;
 }
+
 .hero8 p {
   font-size: 1.5rem;
   color: #db4545;
@@ -283,6 +323,7 @@ color: #222;
   from {
     width: 0;
   }
+
   to {
     width: 28%;
   }
@@ -324,13 +365,11 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-
-
 .card {
   background: #f7f7f7;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
@@ -338,7 +377,7 @@ h2 {
   color: #333;
 }
 
-.container a{
+.container a {
   text-decoration: none;
 }
 
@@ -358,7 +397,7 @@ h2 {
   height: 100%;
 }
 
-.container h3{
+.container h3 {
   text-decoration: underline 2px;
 }
 
@@ -366,7 +405,8 @@ form .form-group {
   margin-bottom: 1.5rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 1rem;
   border-radius: 8px;
@@ -381,16 +421,97 @@ footer {
 }
 
 @media (max-width: 1200px) {
-.navbar .logo-img {
-  height: 60px; /* Réduit encore plus sur mobile */
+  .navbar .logo-img {
+    height: 60px;
+    /* Réduit encore plus sur mobile */
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+    /* Légère réduction des liens */
+    padding: 0 0.5rem;
+    /* Moins d’espace horizontal */
+  }
+
+  .navbar ul {
+    gap: 0.3rem;
+    /* Un peu moins d’espace entre les liens */
+  }
+  
 }
 
-.navbar a {
-  font-size: 0.85rem; /* Légère réduction des liens */
-  padding: 0 0.5rem;   /* Moins d’espace horizontal */
+/* CARROUSEL */
+.carousel-section {
+  padding: 4rem 0;
+  background-color: #f5f5dc;
+  text-align: center;
 }
 
-.navbar ul {
-  gap: 0.3rem; /* Un peu moins d’espace entre les liens */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;       /* prend presque toute la largeur */
+  max-width: 900px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 16 / 9; /* garde un ratio fixe pour que ça rapetisse */
 }
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;    /* prend toute la hauteur du container */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* remplit le container sans déformation */
+  display: block;
+}
+
+/* Boutons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(111, 0, 0, 0.7);
+  border: none;
+  color: #FEF972;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(111, 0, 0, 0.9);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%;       /* prend toute la largeur de l’écran */
+    aspect-ratio: 16 / 9; /* garde le ratio, donc la hauteur s’adapte */
+  }
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
 }
